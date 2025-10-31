@@ -359,7 +359,7 @@ AOS.init({
 
 // Typing Effect for Hero Text
 const typedTextSpan = document.querySelector('.typing-text');
-const textArray = ["Real Estate Marketing Professional", "Property Consultant", "Real Estate Advisor"];
+const textArray = ["Vetrireals Marketing Manager", "Real Estate Marketing Professional", "Property Consultant", "Real Estate Advisor"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000;

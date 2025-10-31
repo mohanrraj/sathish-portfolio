@@ -1263,7 +1263,10 @@ footer p {
 /* Gradient Text Backgrounds for Each Project */
 .project-info {
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0 0 20px 20px;
 }
 
@@ -1356,7 +1359,7 @@ footer p {
   }
   
   .project-info h3 {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
   }
   
   .project-info p {

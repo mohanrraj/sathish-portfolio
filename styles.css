@@ -939,25 +939,42 @@ footer p {
     height: 21px;
     cursor: pointer;
     z-index: 1000;
+    position: relative;
   }
   
   .hamburger .line {
     width: 100%;
     height: 3px;
     background: var(--primary);
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    border-radius: 3px;
+  }
+
+  .hamburger .line:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger .line:nth-child(2) {
+    top: 9px;
+  }
+
+  .hamburger .line:nth-child(3) {
+    top: 18px;
   }
   
   .hamburger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 6px);
+    transform: rotate(45deg) translate(5px, 5px);
   }
   
   .hamburger.active .line:nth-child(2) {
     opacity: 0;
+    transform: translateX(20px);
   }
   
   .hamburger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -6px);
+    transform: rotate(-45deg) translate(5px, -5px);
   }
   
   .hero-text h1 {
@@ -1246,7 +1263,7 @@ footer p {
 /* Gradient Text Backgrounds for Each Project */
 .project-info {
   padding: 20px;
-  text-align: left;
+  text-align: center;
   border-radius: 0 0 20px 20px;
 }
 

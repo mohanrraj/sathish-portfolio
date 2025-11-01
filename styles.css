@@ -1241,6 +1241,7 @@ footer p {
 }
 
 .portfolio-image {
+  scale: 1.01;
   position: relative;
   height: 220px;
   display: flex;

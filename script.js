@@ -387,6 +387,139 @@ function erase() {
   }
 }
 
+// Project Modal Functionality
+const modal = document.getElementById('projectModal');
+const modalPoster = document.getElementById('modalPoster');
+const modalLayout = document.getElementById('modalLayout');
+const projectDescription = document.getElementById('projectDescription');
+const closeBtn = document.querySelector('.close-btn');
+
+// Sample project data (you can replace this with your actual project data)
+const projects = {
+    'project1': {
+        poster: 'projects/project1.jpg',
+        layout: 'projects/layouts/kanchi_kanda_kottam_layout_plan.jpg',
+        description: 'Luxury residential project with modern amenities and spacious layouts. Perfect for families looking for comfort and style.'
+    },
+    'project2': {
+        poster: 'projects/project2.jpg',
+        layout: 'projects/layouts/railway_nagar_layout_plan.jpg',
+        description: 'Premium commercial space with excellent connectivity and modern infrastructure. Ideal for businesses looking to establish a strong presence.'
+    },
+    'project3': {
+        poster: 'projects/project3.jpg',
+        layout: 'projects/layouts/satellite_city_layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    },
+    'project4': {
+        poster: 'projects/project4.jpg',
+        layout: 'projects/layouts/sri_sai_padmavati_nagar_layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    },
+    'project5': {
+        poster: 'projects/project5.jpg',
+        layout: 'projects/layouts/collector_farms_layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    },
+    'project6': {
+        poster: 'projects/project6.jpg',
+        layout: 'projects/layouts/sri_sakthi_vinayagar_nagar_layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    },
+    'project7': {
+        poster: 'projects/project7.jpg',
+        layout: 'projects/layouts/siddhar_nagar_layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    },
+    'project8': {
+        poster: 'projects/project8.jpg',
+        layout: 'projects/layouts/Vsr_nagar_layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    },
+    'project9': {
+        poster: 'projects/project9.jpg',
+        layout: 'projects/layouts/mm_nagar_layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    },
+    'project10': {
+        poster: 'projects/project10.jpg',
+        layout: 'projects/layouts/sri_ranganathar_avenue_Layout_plan.jpg',
+        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+    }
+    // Add more projects as needed
+};
+
+// Function to open modal with project details
+function openProjectModal(projectId) {
+    const project = projects[projectId];
+    if (!project) return;
+
+    modalPoster.src = project.poster;
+    modalLayout.src = project.layout;
+    projectDescription.textContent = project.description;
+    
+    // Show modal with animation
+    modal.style.display = 'block';
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+    
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+}
+
+// Function to close modal
+function closeModal() {
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = 'none';
+        // Reset body scroll
+        document.body.style.overflow = '';
+    }, 300);
+}
+
+// Close modal when clicking the X button
+closeBtn.addEventListener('click', closeModal);
+
+// Close modal when clicking outside the modal content
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'block') {
+        closeModal();
+    }
+});
+
+// Image click to view in full screen
+modalPoster.addEventListener('click', () => {
+    window.open(modalPoster.src, '_blank');
+});
+
+modalLayout.addEventListener('click', () => {
+    window.open(modalLayout.src, '_blank');
+});
+
+// Add click event listeners to project items
+document.addEventListener('DOMContentLoaded', () => {
+    const projectItems = document.querySelectorAll('.portfolio-item');
+    
+    projectItems.forEach((item, index) => {
+        // Add data attribute to identify project
+        item.setAttribute('data-project-id', `project${index + 1}`);
+        
+        // Add click event to open modal
+        item.addEventListener('click', () => {
+            const projectId = item.getAttribute('data-project-id');
+            openProjectModal(projectId);
+        });
+    });
+});
+
 // Start the typing effect when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   if (textArray.length) setTimeout(type, newTextDelay + 250);

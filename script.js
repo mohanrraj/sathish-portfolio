@@ -417,17 +417,17 @@ const projects = {
         description: 'Sri Sai Padmavati Nagar offers a safe gated community with tar roads, parks, a temple, and 24/7 security in a pollution-free environment. It includes walkways, stormwater drains, and 24×7 transport access for convenient living. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures comfort and accessibility.'
     },
     'project5': {
-        poster: 'projects/project5.jpg',
+        poster: 'projects/posters/logo05a.jpg',
         layout: 'projects/layouts/collector_farms_layout_plan.jpg',
         description: 'Collector Farms offers spacious plots starting from 5010 sq. ft. with 24×7 transport, water, and electricity facilities. It provides a pollution-free environment with lush green plantations and 24 ft wide tar roads. With clear documentation, it’s ideal for organic agriculture and farmland development.'
     },
     'project6': {
-        poster: 'projects/project6.jpg',
+        poster: 'projects/posters/logo06a.jpg',
         layout: 'projects/layouts/sri_sakthi_vinayagar_nagar_layout_plan.jpg',
         description: 'Sri Sakthi Vinayagar Nagar (Golden Heaven) offers a gated community with cement roads, parks, a temple, and 24/7 security in a pollution-free environment. It provides 24×7 transport access and is located in an established residential area. With reliable water supply and 80% bank loan availability, it ensures comfortable and convenient living.'
     },
     'project7': {
-        poster: 'projects/project7.jpg',
+        poster: 'projects/posters/logo07a.jpg',
         layout: 'projects/layouts/siddhar_nagar_layout_plan.jpg',
         description: 'Siddhar Nagar offers a secure gated community with tar roads, parks, a temple, and 24/7 surveillance. It includes drainage systems, water connections for each plot, and fenced boundaries for added safety. With CCTV, children’s play areas, parking, and 80% bank loan availability, it ensures modern and comfortable living.'
     },

@@ -397,54 +397,54 @@ const closeBtn = document.querySelector('.close-btn');
 // Sample project data (you can replace this with your actual project data)
 const projects = {
     'project1': {
-        poster: 'projects/project1.jpg',
+        poster: 'projects/posters/logo01a.jpg',
         layout: 'projects/layouts/kanchi_kanda_kottam_layout_plan.jpg',
-        description: 'Luxury residential project with modern amenities and spacious layouts. Perfect for families looking for comfort and style.'
+        description: 'KANCHI KANDA KOTTAM offers a gated community with cement roads, a park, a temple, and 24/7 security.  It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it provides comfort and convenience. '
     },
     'project2': {
-        poster: 'projects/project2.jpg',
+        poster: 'projects/posters/logo02a.jpg',
         layout: 'projects/layouts/railway_nagar_layout_plan.jpg',
-        description: 'Premium commercial space with excellent connectivity and modern infrastructure. Ideal for businesses looking to establish a strong presence.'
+        description: 'RAILWAY NAGAR offers a secure gated community with tar roads, parks, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned layout. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures convenient living.'
     },
     'project3': {
-        poster: 'projects/project3.jpg',
+        poster: 'projects/posters/logo03a.jpg',
         layout: 'projects/layouts/satellite_city_layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'SATELLITE CITY offers a gated community with parks, walkways, streetlights, and 24/7 security. It features commercial shops, children’s play areas, and ample parking with cemented roads and stormwater drains. Water, bank loan facilities, and on-road access make it a fully equipped and convenient residential layout.'
     },
     'project4': {
-        poster: 'projects/project4.jpg',
+        poster: 'projects/posters/logo04a.jpg',
         layout: 'projects/layouts/sri_sai_padmavati_nagar_layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'Sri Sai Padmavati Nagar offers a safe gated community with tar roads, parks, a temple, and 24/7 security in a pollution-free environment. It includes walkways, stormwater drains, and 24×7 transport access for convenient living. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures comfort and accessibility.'
     },
     'project5': {
         poster: 'projects/project5.jpg',
         layout: 'projects/layouts/collector_farms_layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'Collector Farms offers spacious plots starting from 5010 sq. ft. with 24×7 transport, water, and electricity facilities. It provides a pollution-free environment with lush green plantations and 24 ft wide tar roads. With clear documentation, it’s ideal for organic agriculture and farmland development.'
     },
     'project6': {
         poster: 'projects/project6.jpg',
         layout: 'projects/layouts/sri_sakthi_vinayagar_nagar_layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'Sri Sakthi Vinayagar Nagar (Golden Heaven) offers a gated community with cement roads, parks, a temple, and 24/7 security in a pollution-free environment. It provides 24×7 transport access and is located in an established residential area. With reliable water supply and 80% bank loan availability, it ensures comfortable and convenient living.'
     },
     'project7': {
         poster: 'projects/project7.jpg',
         layout: 'projects/layouts/siddhar_nagar_layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'Siddhar Nagar offers a secure gated community with tar roads, parks, a temple, and 24/7 surveillance. It includes drainage systems, water connections for each plot, and fenced boundaries for added safety. With CCTV, children’s play areas, parking, and 80% bank loan availability, it ensures modern and comfortable living.'
     },
     'project8': {
-        poster: 'projects/project8.jpg',
+        poster: 'projects/posters/logo08a.jpg',
         layout: 'projects/layouts/Vsr_nagar_layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'VSR NAGAR offers a gated community with black tar roads, parks, a temple, and 24/7 security in a pollution-free environment. It features rainwater harvesting, CCTV surveillance, and 24×7 transport facilities in an established residential area. With children’s play areas, parking, and 90% bank loan availability, it ensures a secure and comfortable lifestyle. '
     },
     'project9': {
-        poster: 'projects/project9.jpg',
+        poster: 'projects/posters/logo09a.jpg',
         layout: 'projects/layouts/mm_nagar_layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'MM NAGAR offers a gated community with tar roads, parks, a temple, and round-the-clock security in a pollution-free environment. It features walkways, public utility areas, stormwater drains, and streetlights for comfortable living. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures convenience and accessibility.'
     },
     'project10': {
-        poster: 'projects/project10.jpg',
+        poster: 'projects/posters/logo010a.jpg',
         layout: 'projects/layouts/sri_ranganathar_avenue_Layout_plan.jpg',
-        description: 'Eco-friendly residential complex with green spaces and sustainable features. A perfect blend of nature and modern living.'
+        description: 'SRI RANGANATHAR AVENUE offers a gated community with cement roads, parks, a temple, and 24/7 security. It features walkways, public utility areas, stormwater drains, and streetlights for a well-developed layout. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures modern and convenient living. '
     }
     // Add more projects as needed
 };

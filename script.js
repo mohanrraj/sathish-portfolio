@@ -399,7 +399,7 @@ const projects = {
     'project1': {
         poster: 'projects/posters/logo01a.jpg',
         layout: 'projects/layouts/kanchi_kanda_kottam_layout_plan.jpg',
-        description: 'KANCHI KANDA KOTTAM offers a gated community with cement roads, a park, a temple, and 24/7 security.  It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it provides comfort and convenience. '
+        description: 'KANCHI KANDA KOTTAM offers a gated community with cement roads, a park, a temple, and 24/7 security.  It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project2': {
         poster: 'projects/posters/logo02a.jpg',
@@ -434,7 +434,7 @@ const projects = {
     'project8': {
         poster: 'projects/posters/logo08a.jpg',
         layout: 'projects/layouts/Vsr_nagar_layout_plan.jpg',
-        description: 'VSR NAGAR offers a gated community with black tar roads, parks, a temple, and 24/7 security in a pollution-free environment. It features rainwater harvesting, CCTV surveillance, and 24×7 transport facilities in an established residential area. With children’s play areas, parking, and 90% bank loan availability, it ensures a secure and comfortable lifestyle. '
+        description: 'VSR NAGAR offers a gated community with black tar roads, parks, a temple, and 24/7 security in a pollution-free environment. It features rainwater harvesting, CCTV surveillance, and 24×7 transport facilities in an established residential area. With children’s play areas, parking, and 90% bank loan availability, it ensures a secure and comfortable lifestyle.'
     },
     'project9': {
         poster: 'projects/posters/logo09a.jpg',

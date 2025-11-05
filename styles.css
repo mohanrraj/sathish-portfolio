@@ -120,6 +120,7 @@ img {
   background: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
+  transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
@@ -127,6 +128,14 @@ img {
   color: white;
   transform: translateY(-3px);
 }
+
+.btn-outline:focus,
+.btn-outline:active {
+  background: transparent;
+  color: var(--primary);
+  transform: none;
+}
+
 
 /* Header & Navigation */
 .navbar {

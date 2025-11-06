@@ -501,6 +501,11 @@ function openProjectModal(projectId) {
     // Add show class to trigger the animation
     modal.classList.add('show');
     
+    // Add a history state when opening the modal
+    history.pushState({ modalOpen: true, projectId: projectId }, '', '#' + projectId);
+    // Add another history state to ensure back button goes to home
+    history.pushState({ modalOpen: false }, '', window.location.pathname);
+    
     // Focus the modal for better accessibility
     modal.setAttribute('aria-hidden', 'false');
 }
@@ -512,6 +517,12 @@ function closeModal() {
         modal.style.display = 'none';
         // Reset body scroll
         document.body.style.overflow = '';
+        
+        // Only modify history if we're currently showing a modal
+        if (window.history.state && window.history.state.modalOpen) {
+            // Go back in history to remove the modal state
+            history.back();
+        }
     }, 300);
 }
 
@@ -536,10 +547,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Close modal with Escape key
+        // Close modal with Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.style.display === 'block') {
             closeModal();
+        }
+    });
+    
+    // Handle browser back button
+    window.addEventListener('popstate', (e) => {
+        // If the modal is open and we're going back from a modal state
+        if (modal.style.display === 'block') {
+            closeModal();
+            // If we're not going to another modal state, scroll to top
+            if (!e.state || !e.state.modalOpen) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+        // If we're going to a modal state
+        else if (e.state && e.state.modalOpen) {
+            openProjectModal(e.state.projectId);
         }
     });
 

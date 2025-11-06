@@ -1823,3 +1823,44 @@ footer p {
 .portfolio-item:nth-child(10) .btn-gradient {
   background: linear-gradient(135deg, #7f00ff, #e100ff);
 }
+
+/* Footer with Background Image */
+.footer-img {
+    background-image: url('../projects/posters/house-8458547_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+.footer-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.footer-img .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.footer-grad{
+    background: linear-gradient(135deg, #fcf3f3, #c2f3ef);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}

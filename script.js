@@ -389,83 +389,120 @@ function erase() {
 
 // Project Modal Functionality
 const modal = document.getElementById('projectModal');
-const modalPoster = document.getElementById('modalPoster');
-const modalLayout = document.getElementById('modalLayout');
-const projectDescription = document.getElementById('projectDescription');
-const closeBtn = document.querySelector('.close-btn');
 
-// Sample project data (you can replace this with your actual project data)
+// Project data with title, location, and description for each project
 const projects = {
     'project1': {
+        title: 'Kanchi Kanda Kottam',
+        location: 'Kanchipuram, Tamil Nadu',
         poster: 'projects/posters/logo01a.jpg',
         layout: 'projects/layouts/kanchi_kanda_kottam_layout_plan.jpg',
-        description: 'KANCHI KANDA KOTTAM offers a gated community with cement roads, a park, a temple, and 24/7 security.  It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
+        description: 'KANCHI KANDA KOTTAM offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project2': {
+        title: 'Railway Nagar',
+        location: 'Chengalpattu, Tamil Nadu',
         poster: 'projects/posters/logo02a.jpg',
         layout: 'projects/layouts/railway_nagar_layout_plan.jpg',
-        description: 'RAILWAY NAGAR offers a secure gated community with tar roads, parks, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned layout. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures convenient living.'
+        description: 'RAILWAY NAGAR offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project3': {
+        title: 'Velachery Heights',
+        location: 'Chennai, Tamil Nadu',
         poster: 'projects/posters/logo03a.jpg',
-        layout: 'projects/layouts/satellite_city_layout_plan.jpg',
-        description: 'SATELLITE CITY offers a gated community with parks, walkways, streetlights, and 24/7 security. It features commercial shops, children’s play areas, and ample parking with cemented roads and stormwater drains. Water, bank loan facilities, and on-road access make it a fully equipped and convenient residential layout.'
+        layout: 'projects/layouts/velachery_heights_layout_plan.jpg',
+        description: 'VELACHERY HEIGHTS offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project4': {
+        title: 'OMR Skyline',
+        location: 'Chennai, Tamil Nadu',
         poster: 'projects/posters/logo04a.jpg',
-        layout: 'projects/layouts/sri_sai_padmavati_nagar_layout_plan.jpg',
-        description: 'Sri Sai Padmavati Nagar offers a safe gated community with tar roads, parks, a temple, and 24/7 security in a pollution-free environment. It includes walkways, stormwater drains, and 24×7 transport access for convenient living. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures comfort and accessibility.'
+        layout: 'projects/layouts/omr_skyline_layout_plan.jpg',
+        description: 'OMR SKYLINE offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project5': {
+        title: 'Green Valley',
+        location: 'Kanchipuram, Tamil Nadu',
         poster: 'projects/posters/logo05a.jpg',
-        layout: 'projects/layouts/collector_farms_layout_plan.jpg',
-        description: 'Collector Farms offers spacious plots starting from 5010 sq. ft. with 24×7 transport, water, and electricity facilities. It provides a pollution-free environment with lush green plantations and 24 ft wide tar roads. With clear documentation, it’s ideal for organic agriculture and farmland development.'
+        layout: 'projects/layouts/green_valley_layout_plan.jpg',
+        description: 'GREEN VALLEY offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project6': {
+        title: 'Lakeview Residences',
+        location: 'Chengalpattu, Tamil Nadu',
         poster: 'projects/posters/logo06a.jpg',
-        layout: 'projects/layouts/sri_sakthi_vinayagar_nagar_layout_plan.jpg',
-        description: 'Sri Sakthi Vinayagar Nagar (Golden Heaven) offers a gated community with cement roads, parks, a temple, and 24/7 security in a pollution-free environment. It provides 24×7 transport access and is located in an established residential area. With reliable water supply and 80% bank loan availability, it ensures comfortable and convenient living.'
+        layout: 'projects/layouts/lakeview_residences_layout_plan.jpg',
+        description: 'LAKEVIEW RESIDENCES offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project7': {
+        title: 'Siddhar Nagar',
+        location: 'Salem, Tamil Nadu',
         poster: 'projects/posters/logo07a.jpg',
         layout: 'projects/layouts/siddhar_nagar_layout_plan.jpg',
-        description: 'Siddhar Nagar offers a secure gated community with tar roads, parks, a temple, and 24/7 surveillance. It includes drainage systems, water connections for each plot, and fenced boundaries for added safety. With CCTV, children’s play areas, parking, and 80% bank loan availability, it ensures modern and comfortable living.'
+        description: 'SIDDHAR NAGAR offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project8': {
+        title: 'VSR Nagar',
+        location: 'Chengalpattu, Tamil Nadu',
         poster: 'projects/posters/logo08a.jpg',
-        layout: 'projects/layouts/Vsr_nagar_layout_plan.jpg',
-        description: 'VSR NAGAR offers a gated community with black tar roads, parks, a temple, and 24/7 security in a pollution-free environment. It features rainwater harvesting, CCTV surveillance, and 24×7 transport facilities in an established residential area. With children’s play areas, parking, and 90% bank loan availability, it ensures a secure and comfortable lifestyle.'
+        layout: 'projects/layouts/vsr_nagar_layout_plan.jpg',
+        description: 'VSR NAGAR offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project9': {
+        title: 'MM Nagar',
+        location: 'Chengalpattu, Tamil Nadu',
         poster: 'projects/posters/logo09a.jpg',
         layout: 'projects/layouts/mm_nagar_layout_plan.jpg',
-        description: 'MM NAGAR offers a gated community with tar roads, parks, a temple, and round-the-clock security in a pollution-free environment. It features walkways, public utility areas, stormwater drains, and streetlights for comfortable living. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures convenience and accessibility.'
+        description: 'MM NAGAR offers a gated community with cement roads, a park, a temple, and 24/7 security. It includes walkways, public utility areas, stormwater drains, and streetlights for a well-planned environment. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it provides comfort and convenience.'
     },
     'project10': {
+        title: 'Sri Ranganathar Avenue',
+        location: 'Palur, Tamil Nadu',
         poster: 'projects/posters/logo010a.jpg',
         layout: 'projects/layouts/sri_ranganathar_avenue_Layout_plan.jpg',
-        description: 'SRI RANGANATHAR AVENUE offers a gated community with cement roads, parks, a temple, and 24/7 security. It features walkways, public utility areas, stormwater drains, and streetlights for a well-developed layout. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures modern and convenient living. '
+        description: 'SRI RANGANATHAR AVENUE offers a gated community with cement roads, parks, a temple, and 24/7 security. It features walkways, public utility areas, stormwater drains, and streetlights for a well-developed layout. With commercial shops, children\'s play areas, parking, and 90% bank loan availability, it ensures modern and convenient living.'
     }
     // Add more projects as needed
 };
+
+// Get modal elements
+const modalPoster = document.getElementById('modalPoster');
+const modalLayout = document.getElementById('modalLayout');
+const projectDescription = document.getElementById('projectDescription');
+const projectTitle = document.getElementById('projectTitle');
+const projectLocation = document.getElementById('projectLocation');
+const closeBtn = document.querySelector('.close-btn');
 
 // Function to open modal with project details
 function openProjectModal(projectId) {
     const project = projects[projectId];
     if (!project) return;
 
+    // Set the modal content
     modalPoster.src = project.poster;
     modalLayout.src = project.layout;
     projectDescription.textContent = project.description;
+    projectTitle.textContent = project.title;
+    projectLocation.textContent = project.location;
     
-    // Show modal with animation
+    // Update WhatsApp button with project details
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    const phoneNumber = '919367936749'; // Replace with your WhatsApp number (without + or spaces)
+    const message = encodeURIComponent(`Hi, I'm interested in ${project.title}. I would like to know more details about this project.`); 
+    whatsappBtn.href = `https://wa.me/${phoneNumber}?text=${message}`;
+    
+    // Show the modal
     modal.style.display = 'block';
-    setTimeout(() => {
-        modal.classList.add('show');
-    }, 10);
-    
-    // Prevent body scroll when modal is open
     document.body.style.overflow = 'hidden';
+    
+    // Force reflow to ensure the transition works
+    void modal.offsetHeight;
+    
+    // Add show class to trigger the animation
+    modal.classList.add('show');
+    
+    // Focus the modal for better accessibility
+    modal.setAttribute('aria-hidden', 'false');
 }
 
 // Function to close modal
@@ -478,30 +515,42 @@ function closeModal() {
     }, 300);
 }
 
-// Close modal when clicking the X button
-closeBtn.addEventListener('click', closeModal);
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Close modal when clicking the X button
+    closeBtn.addEventListener('click', closeModal);
 
-// Close modal when clicking outside the modal content
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        closeModal();
-    }
-});
+    // Add click handlers to all View Project buttons
+    document.querySelectorAll('.btn-gradient').forEach((button, index) => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const projectId = 'project' + (index + 1);
+            openProjectModal(projectId);
+        });
+    });
 
-// Close modal with Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.style.display === 'block') {
-        closeModal();
-    }
-});
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
 
-// Image click to view in full screen
-modalPoster.addEventListener('click', () => {
-    window.open(modalPoster.src, '_blank');
-});
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            closeModal();
+        }
+    });
 
-modalLayout.addEventListener('click', () => {
-    window.open(modalLayout.src, '_blank');
+    // Image click to view in full screen
+    modalPoster.addEventListener('click', () => {
+        window.open(modalPoster.src, '_blank');
+    });
+
+    modalLayout.addEventListener('click', () => {
+        window.open(modalLayout.src, '_blank');
+    });
 });
 
 // Add click event listeners to project items

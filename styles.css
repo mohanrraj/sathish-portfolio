@@ -942,10 +942,34 @@ footer p {
     font-weight: 500;
 }
 
-.project-location i {
+.project-location i,
+.project-phone i {
     margin-right: 10px;
     color: var(--primary);
     font-size: 1.2em;
+}
+
+.project-location i {
+    font-size: 1.4em;
+}
+.project-phone {
+    display: flex;
+    align-items: center;
+    color: #7f8c8d;
+    margin: 5px 0 15px;
+    font-weight: 600;
+}
+
+.project-phone a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-phone a:hover {
+    color: var(--primary);
 }
 
 .modal-images {
@@ -1028,7 +1052,7 @@ footer p {
     font-size: 20px;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #b00000a0;
 }
 
 /* Responsive styles */

@@ -1142,6 +1142,29 @@ footer p {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
+.whatsapp-btn:focus,
+.whatsapp-btn:active {
+      display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    transform: none;
+}
+
 .whatsapp-btn i {
     font-size: 1.4em;
 }

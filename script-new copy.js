@@ -328,6 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <i class="fas fa-map-marker-alt"></i>
                         <span>${project.location}</span>
                     </div>
+                    <p class="project-description">${project.description}</p>
                     <a href="#" class="view-project" onclick="openProjectModal('${id}')">
                         View Project <i class="fas fa-arrow-right"></i>
                     </a>
@@ -382,7 +383,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <p class="modal-description">${project.description}</p>
                 
-                <!-- Features section commented out for future use
                 <div class="modal-features">
                     <h3>Key Features</h3>
                     <div class="features-grid">
@@ -394,7 +394,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         `).join('')}
                     </div>
                 </div>
-                -->
                 
                 <div class="modal-actions">
                     <a href="https://wa.me/919367936748?text=Hi%20Sathish,%20I'm%20interested%20in%20${encodeURIComponent(project.title)}%20project" 

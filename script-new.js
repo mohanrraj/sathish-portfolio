@@ -150,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Kanchi Kanda Kottam',
             location: 'Kanchipuram, Tamil Nadu',
             description: 'A premium residential project offering modern living spaces with all necessary amenities in the heart of Kanchipuram.',
-            logo: 'projects/logos/project1.jpg',
-            poster: 'projects/posters/project1.jpg',
-            layout: 'projects/layouts/project1.jpg',
+            logo: './projects/logos/logo01.jpg',
+            poster: './projects/posters/logo01a.jpg',
+            layout: './projects/layouts/kanchi_kanda_kottam_layout_plan.jpg',
             features: [
                 'Prime location in Kanchipuram',
                 'Modern architectural design',
@@ -166,9 +166,9 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Railway Nagar',
             location: 'Chengalpattu, Tamil Nadu',
             description: 'Strategically located residential plots with excellent connectivity to major transportation hubs.',
-            logo: 'projects/logos/project2.jpg',
-            poster: 'projects/posters/project2.jpg',
-            layout: 'projects/layouts/project2.jpg',
+            logo: './projects/logos/logo02.jpg',
+            poster: './projects/posters/logo02a.jpg',
+            layout: './projects/layouts/railway_nagar_layout_plan.jpg',
             features: [
                 'Prime location near railway station',
                 'Well-planned layout',
@@ -182,9 +182,9 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Satellite City',
             location: 'Chengalpattu, Tamil Nadu',
             description: 'A well-planned township with modern amenities and excellent connectivity to major highways.',
-            logo: 'projects/logos/project3.jpg',
-            poster: 'projects/posters/project3.jpg',
-            layout: 'projects/layouts/project3.jpg',
+            logo: './projects/logos/logo03.jpg',
+            poster: './projects/posters/logo03a.jpg',
+            layout: './projects/layouts/satellite_city_layout_plan.jpg',
             features: [
                 'Prime location near OMR',
                 'Gated community',
@@ -194,13 +194,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Power backup'
             ]
         },
-        'green-valley': {
-            title: 'Green Valley',
-            location: 'Kanchipuram, Tamil Nadu',
+        'sri-sai-padmavati-nagar': {
+            title: 'Sri Sai Padmavati Nagar',
+            location: 'Chengalpattu, Tamil Nadu',
             description: 'Eco-friendly residential plots surrounded by nature with all modern amenities.',
-            logo: 'projects/logos/project4.jpg',
-            poster: 'projects/posters/project4.jpg',
-            layout: 'projects/layouts/project4.jpg',
+            logo: './projects/logos/logo04.jpg',
+            poster: './projects/posters/logo04a.jpg',
+            layout: './projects/layouts/sri_sai_padmavati_nagar_layout_plan.jpg',
             features: [
                 'Picturesque location',
                 'Eco-friendly development',
@@ -210,13 +210,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 '24/7 security'
             ]
         },
-        'royal-gardens': {
-            title: 'Royal Gardens',
+        'collector-farms': {
+            title: 'Collector Farms',
             location: 'Chengalpattu, Tamil Nadu',
             description: 'Luxury villas with modern amenities and beautiful landscaping.',
-            logo: 'projects/logos/project5.jpg',
-            poster: 'projects/posters/project5.jpg',
-            layout: 'projects/layouts/project5.jpg',
+            logo: './projects/logos/logo05.jpg',
+            poster: './projects/posters/logo05a.jpg',
+            layout: './projects/layouts/collector_farms_layout_plan.jpg',
             features: [
                 'Luxury villas',
                 'Landscaped gardens',
@@ -226,13 +226,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Power backup'
             ]
         },
-        'oasis-residency': {
-            title: 'Oasis Residency',
-            location: 'Kanchipuram, Tamil Nadu',
+        'sri-sakthi-vinayagar-nagar': {
+            title: 'Sri Sakthi Vinayagar Nagar',
+            location: 'Vandavasi, Tamil Nadu',
             description: 'A peaceful residential community with modern amenities and green spaces.',
-            logo: 'projects/logos/project6.jpg',
-            poster: 'projects/posters/project6.jpg',
-            layout: 'projects/layouts/project6.jpg',
+            logo: './projects/logos/logo06.jpg',
+            poster: './projects/posters/logo06a.jpg',
+            layout: './projects/layouts/sri_sakthi_vinayagar_nagar_layout_plan.jpg',
             features: [
                 'Tranquil environment',
                 'Modern infrastructure',
@@ -242,13 +242,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Power backup'
             ]
         },
-        'vsr-nagar': {
-            title: 'VSR Nagar',
-            location: 'Chengalpattu, Tamil Nadu',
+        'siddhar-nagar': {
+            title: 'Siddhar Nagar',
+            location: 'Salem, Tamil Nadu',
             description: 'A well-planned residential community with modern amenities and green spaces.',
-            logo: 'projects/logos/project7.jpg',
-            poster: 'projects/posters/project7.jpg',
-            layout: 'projects/layouts/project7.jpg',
+            logo: './projects/logos/logo07.jpg',
+            poster: './projects/posters/logo07a.jpg',
+            layout: './projects/layouts/siddhar_nagar_layout_plan.jpg',
             features: [
                 'Premium location',
                 'Modern infrastructure',
@@ -258,13 +258,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Electricity connection'
             ]
         },
-        'vsr-nagar-2': {
-            title: 'VSR Nagar Phase 2',
+        'vsr-nagar': {
+            title: 'VSR Nagar',
             location: 'Chengalpattu, Tamil Nadu',
             description: 'Second phase of the successful VSR Nagar project with improved amenities.',
-            logo: 'projects/logos/project8.jpg',
-            poster: 'projects/posters/project8.jpg',
-            layout: 'projects/layouts/project8.jpg',
+            logo: './projects/logos/logo08.jpg',
+            poster: './projects/posters/logo08a.jpg',
+            layout: './projects/layouts/vsr_nagar_layout_plan.jpg',
             features: [
                 'Premium location',
                 'Enhanced infrastructure',
@@ -274,13 +274,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Water supply'
             ]
         },
-        'green-meadows': {
-            title: 'Green Meadows',
-            location: 'Kanchipuram, Tamil Nadu',
+        'mm-nagar': {
+            title: 'MM Nagar',
+            location: 'Chengalpattu, Tamil Nadu',
             description: 'A green residential community with modern amenities and open spaces.',
-            logo: 'projects/logos/project9.jpg',
-            poster: 'projects/posters/project9.jpg',
-            layout: 'projects/layouts/project9.jpg',
+            logo: './projects/logos/logo09.jpg',
+            poster: './projects/posters/logo09a.jpg',
+            layout: './projects/layouts/mm_nagar_layout_plan.jpg',
             features: [
                 'Eco-friendly development',
                 'Lush green surroundings',
@@ -290,13 +290,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Power backup'
             ]
         },
-        'royal-palms': {
-            title: 'Royal Palms',
-            location: 'Chengalpattu, Tamil Nadu',
+        'sri-ranganathar-avenue': {
+            title: 'Sri Ranganathar Avenue',
+            location: 'Palur, Tamil Nadu',
             description: 'Luxury apartments with premium amenities and beautiful landscaping.',
-            logo: 'projects/logos/project10.jpg',
-            poster: 'projects/posters/project10.jpg',
-            layout: 'projects/layouts/project10.jpg',
+            logo: './projects/logos/logo10.jpg',
+            poster: './projects/posters/logo10a.jpg',
+            layout: './projects/layouts/sri_ranganathar_avenue_layout_plan.jpg',
             features: [
                 'Luxury apartments',
                 'Landscaped gardens',
@@ -350,120 +350,128 @@ document.addEventListener('DOMContentLoaded', function() {
         // Push state to history when opening modal
         history.pushState({ modal: true }, '', `#${projectId}`);
         
-        // Store the current scroll position
-        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-        const modalBody = document.querySelector('.modal-body');
-        modalBody.innerHTML = `
-            <div class="modal-gallery">
-                <div class="gallery-slider">
-                    <div class="slide active">
-                        <img src="${project.poster}" alt="${project.title} Poster">
-                        <div class="slide-caption">Project Overview</div>
-                    </div>
-                    <div class="slide">
-                        <img src="${project.layout}" alt="${project.title} Layout">
-                        <div class="slide-caption">Layout Plan</div>
-                    </div>
-                    <div class="slider-nav">
-                        <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
-                        <div class="slider-dots">
-                            <span class="dot active" data-slide="0"></span>
-                            <span class="dot" data-slide="1"></span>
+        // Create modal content
+        const modalContent = `
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="modal-body">
+                    <div class="project-header">
+                        <h2>${project.title}</h2>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>${project.location}</span>
                         </div>
-                        <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="project-phone">
+                            <a href="tel:+919367936749">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 93679 36749</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-images">
+                        <div class="modal-image-container">
+                            <img src="${project.poster}" alt="${project.title}" class="modal-poster">
+                        </div>
+                        <div class="modal-image-container">
+                            <img src="${project.layout}" alt="${project.title} Layout" class="modal-layout">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Project Details</h3>
+                        <p>${project.description}</p>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="https://wa.me/919367936749?text=Hi%20Sathish,%20I'm%20interested%20in%20${encodeURIComponent(project.title)}%20project" 
+                           class="whatsapp-btn" 
+                           target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> WhatsApp for Details
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="modal-details">
-                <h2>${project.title}</h2>
-                <div class="modal-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>${project.location}</span>
-                </div>
-                <p class="modal-description">${project.description}</p>
-                
-                <!-- Features section commented out for future use
-                <div class="modal-features">
-                    <h3>Key Features</h3>
-                    <div class="features-grid">
-                        ${project.features.map(feature => `
-                            <div class="feature-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>${feature}</span>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-                -->
-                
-                <div class="modal-actions">
-                    <a href="https://wa.me/919367936748?text=Hi%20Sathish,%20I'm%20interested%20in%20${encodeURIComponent(project.title)}%20project" 
-                       class="btn btn-primary" 
-                       target="_blank">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="tel:+919367936748" class="btn btn-outline">
-                        <i class="fas fa-phone"></i> Call Now
-                    </a>
-                </div>
-            </div>
-        `;
+            </div>`;
+
+        // Update modal content
+        modal.innerHTML = modalContent;
+        
+        // Show modal
+        document.body.style.overflow = 'hidden';
+        modal.style.display = 'block';
+        modal.classList.add('active');
         
         // Initialize slider
-        initSlider();
-
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        setTimeout(() => {
-            modal.classList.add('active');
-        }, 10);
+        initGallery();
     };
-
-    // Close modal
-    window.closeModal = function() {
-        // Restore the original URL without the hash
-        if (window.location.hash) {
-            history.pushState('', document.title, window.location.pathname + window.location.search);
-        }
-        
-        // Close the modal with animation
-        modal.classList.remove('active');
-        
-        // Restore body styles after animation
-        setTimeout(() => {
-            if (!modal.classList.contains('active')) {
-                modal.style.display = 'none';
-                document.body.style.overflow = '';
-                document.body.style.paddingRight = '';
-                
-                // Restore scroll position
-                const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-                if (scrollY) {
-                    window.scrollTo(0, parseInt(scrollY || '0'));
-                }
-            }
-        }, 300);
-    };
-
-    // Close modal when clicking the overlay
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
-
-    // Close modal with Escape key
-    function handleEscapeKey(e) {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
-            closeModal();
-        }
-    }
 
     // Close modal when clicking outside content or close button
     function handleModalClick(e) {
         if (e.target === modal || e.target.closest('.close-btn')) {
             closeModal();
         }
+    }
+
+    // Initialize gallery navigation
+    function initGallery() {
+        const modal = document.getElementById('projectModal');
+        const prevBtn = modal.querySelector('.prev-arrow');
+        const nextBtn = modal.querySelector('.next-arrow');
+        const images = modal.querySelectorAll('.gallery-slider img');
+        const indicators = modal.querySelectorAll('.gallery-indicator');
+        let currentIndex = 0;
+
+        // Function to update gallery
+        function updateGallery(index) {
+            // Update active image
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+            
+            // Update indicators
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+            
+            currentIndex = index;
+        }
+
+        // Previous button click
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                const newIndex = (currentIndex - 1 + images.length) % images.length;
+                updateGallery(newIndex);
+            });
+        }
+
+        // Next button click
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                const newIndex = (currentIndex + 1) % images.length;
+                updateGallery(newIndex);
+            });
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!modal.classList.contains('active')) return;
+            
+            if (e.key === 'ArrowLeft') {
+                const newIndex = (currentIndex - 1 + images.length) % images.length;
+                updateGallery(newIndex);
+                e.preventDefault();
+            } else if (e.key === 'ArrowRight') {
+                const newIndex = (currentIndex + 1) % images.length;
+                updateGallery(newIndex);
+                e.preventDefault();
+            } else if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Indicator click
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                updateGallery(index);
+            });
+        });
     }
 
     // Handle browser back button

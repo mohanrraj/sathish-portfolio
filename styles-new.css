@@ -1073,12 +1073,22 @@ img {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 2000;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
+    z-index: 1000;
     overflow-y: auto;
-    padding: 40px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .modal.active {
@@ -1087,88 +1097,284 @@ img {
 }
 
 .modal-content {
-    position: relative;
-    max-width: 1000px;
-    margin: 20px auto;
     background: white;
-    border-radius: 15px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-    transform: translateY(20px);
-    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.project-header {
+    margin-bottom: 20px;
+}
+
+.project-header h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 28px;
+}
+
+.project-location {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-location i {
+    margin-right: 8px;
+    color: #4a90e2;
+}
+
+.project-phone {
+    margin-bottom: 20px;
+}
+
+.project-phone a {
+    display: flex;
+    align-items: center;
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-phone i {
+    margin-right: 8px;
+}
+
+.modal-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.modal-image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-poster,
+.modal-layout {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-description h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.project-description p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.modal-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .modal-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-poster,
+    .modal-layout {
+        height: 200px;
+    }
+    
+    .project-header h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-body {
+        padding: 20px 15px;
+    }
+    
+    .project-header h2 {
+        font-size: 22px;
+    }
+    
+    .whatsapp-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .modal.active .modal-content {
     transform: translateY(0);
 }
 
-.close-btn {
+.close-modal {
     position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 2rem;
-    color: var(--light-text);
-    cursor: pointer;
-    z-index: 10;
-    transition: var(--transition);
-    background: white;
-    width: 40px;
-    height: 40px;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    transition: background 0.3s ease;
 }
 
-.close-btn:hover {
-    color: var(--primary-color);
-    transform: rotate(90deg);
+.close-modal:hover {
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .modal-body {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
 }
 
-/* Modal Gallery */
-.modal-gallery {
-    position: relative;
+.modal-container {
+    display: flex;
     width: 100%;
-    background: #000;
+    max-height: 80vh;
+}
+
+.modal-gallery {
+    flex: 1;
+    min-width: 60%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .gallery-slider {
     position: relative;
-    height: 400px;
+    flex: 1;
+    min-height: 300px;
     overflow: hidden;
 }
 
-.slide {
+.gallery-slider img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-slider img.active {
+    opacity: 1;
+}
+
+/* Gallery Arrows */
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    color: var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.slide.active {
-    opacity: 1;
-    z-index: 1;
+.gallery-arrow:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #000;
+.prev-arrow {
+    left: 20px;
+}
+
+.next-arrow {
+    right: 20px;
+}
+
+/* Gallery Indicators */
+.gallery-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 10;
+}
+
+.gallery-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-indicator.active {
+    background: white;
+    transform: scale(1.2);
 }
 
 .slide-caption {

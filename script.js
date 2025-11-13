@@ -461,7 +461,14 @@ const projects = {
         poster: 'projects/posters/logo010a.jpg',
         layout: 'projects/layouts/sri_ranganathar_avenue_Layout_plan.jpg',
         description: 'SRI RANGANATHAR AVENUE offers a gated community with cement roads, parks, a temple, and 24/7 security. It features walkways, public utility areas, stormwater drains, and streetlights for a well-developed layout. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures modern and convenient living.'
-    }
+    },
+    'project11': {
+        title: 'Thirumalai Nagar',
+        location: 'Walajabad Town, Tamil Nadu',
+        poster: 'projects/posters/logo011a.jpg',
+        layout: 'projects/layouts/thirumalai_nagar_layout_plan.jpg',
+        description: 'THIRUMALAI NAGAR offers a gated community with cement roads, parks, a temple, and 24/7 security. It features walkways, public utility areas, stormwater drains, and streetlights for a well-developed layout. With commercial shops, children’s play areas, parking, and 90% bank loan availability, it ensures modern and convenient living.'
+    },
     // Add more projects as needed
 };
 

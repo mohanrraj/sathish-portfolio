@@ -1797,6 +1797,27 @@ footer p {
   .project-info p {
     font-size: 0.9rem !important;
   }
+
+  .portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+     gap: 2rem; 
+  }
+  
+  .portfolio-item {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
 }
 
 .proname {
